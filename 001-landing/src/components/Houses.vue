@@ -24,12 +24,12 @@
 </template>
 
 <script setup>
-import shellAluminum from "../assets/shell-aluminum.jpg"
-import shellGlass from "../assets/shell-glass.jpg"
-import shellGold from "../assets/shell-gold.jpg"
-import shellPaper from "../assets/shell-paper.jpg"
-import shellPlush from "../assets/shell-plush.jpg"
-import shellWood from "../assets/shell-wood.jpg"
+import shellAluminum from "../assets/shell-aluminum.webp"
+import shellGlass from "../assets/shell-glass.webp"
+import shellGold from "../assets/shell-gold.webp"
+import shellPaper from "../assets/shell-paper.webp"
+import shellPlush from "../assets/shell-plush.webp"
+import shellWood from "../assets/shell-wood.webp"
 
 const products = [
   {

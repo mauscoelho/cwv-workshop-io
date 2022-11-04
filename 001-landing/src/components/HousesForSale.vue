@@ -5,10 +5,17 @@
 
       <div class="mt-12 grid grid-cols-1 gap-y-10 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
         <a v-for="product in products" :key="product.id" :href="product.href" class="group">
-          <div
+          <!-- <div
             class="aspect-w-6 aspect-h-5 w-full overflow-hidden rounded-lg bg-cover bg-center"
             :style="{ backgroundImage: `url(${product.imageSrc})` }"
-          ></div>
+          ></div> -->
+          <img
+            class="w-full overflow-hidden rounded-lg bg-cover bg-center"
+            height="512"
+            width="512"         
+            :src="product.imageSrc"
+            :alt="product.imageAlt"
+          />
           <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
             <h3>{{ product.name }}</h3>
             <p>{{ product.price }}</p>
@@ -21,12 +28,12 @@
 </template>
 
 <script setup>
-import shellAluminum from "../assets/shell-aluminum.jpg"
-import shellGlass from "../assets/shell-glass.jpg"
-import shellGold from "../assets/shell-gold.jpg"
-import shellPaper from "../assets/shell-paper.jpg"
-import shellPlush from "../assets/shell-plush.jpg"
-import shellWood from "../assets/shell-wood.jpg"
+import shellAluminum from "../assets/shell-aluminum.webp"
+import shellGlass from "../assets/shell-glass.webp"
+import shellGold from "../assets/shell-gold.webp"
+import shellPaper from "../assets/shell-paper.webp"
+import shellPlush from "../assets/shell-plush.webp"
+import shellWood from "../assets/shell-wood.webp"
 
 const products = [
   {

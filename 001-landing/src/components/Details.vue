@@ -87,6 +87,6 @@
 
 <script setup>
 import { QuestionMarkCircleIcon, SparklesIcon } from "@heroicons/vue/24/outline"
-import barcelonaSnail from "../assets/barcelona-snail.jpg"
-import snailSattelite from "../assets/snail-sattelite.jpg"
+import barcelonaSnail from "../assets/barcelona-snail.webp"
+import snailSattelite from "../assets/snail-sattelite.webp"
 </script>

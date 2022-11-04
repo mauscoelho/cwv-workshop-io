@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One&display=block);
-
+@import "@fontsource/fredoka-one";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
