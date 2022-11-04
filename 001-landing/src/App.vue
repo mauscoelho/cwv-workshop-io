@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router"
+import "@fontsource/fredoka-one";
 </script>
 
 <template>

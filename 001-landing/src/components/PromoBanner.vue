@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-red-600" v-if="promoEnabled && promoExpiresIn && isVisible">
-    <div class="mx-auto flex max-w-7xl justify-between px-4 py-4 sm:px-6 lg:px-8">
+  <div class="bg-red-600 w-full fixed top-0 left-0" v-if="promoEnabled && promoExpiresIn && isVisible">
+    <div class="mx-auto flex max-w-7xl justify-between px-4 py-8 sm:px-6 lg:px-8">
       <div>
         <h3 class="inline font-bold text-white">Promo! 30% discount.</h3>
         <p class="inline text-white">
@@ -28,9 +28,9 @@ const promoEnabled = ref(!promoDisabledInLanguages.includes(navigator.language))
 const promoExpiresIn = ref(null)
 const isVisible = ref(true)
 
-setInterval(() => {
-  updatePromoExpiresIn()
-}, 1000)
+// setInterval(() => {
+    updatePromoExpiresIn()
+// }, 1000)
 
 function updatePromoExpiresIn() {
   const nextDay = new Date()
